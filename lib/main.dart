@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme:
+          ThemeData(brightness: Brightness.dark, primaryColor: Colors.blueGrey),
       title: "Welcome to Flutter",
       home: Scaffold(
         appBar: AppBar(
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
           child: Text('Hello world'),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
